@@ -1,0 +1,73 @@
+% !TeX spellcheck = en_UK
+\documentclass[11pt,a4paper,twoside]{article}
+
+%tilføj bibliografi
+\usepackage{csquotes}
+\usepackage[backend=biber, sortlocale=en_UK, sortcites]{biblatex}
+\addbibresource{mini.bib}
+
+\usepackage[danish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{makeidx}
+\usepackage{multind} %lav flere indexer
+\usepackage{amssymb, amsmath, amsfonts}
+\usepackage[section]{placeins} %tabeller og figurer flyder kun indenfor egen sektion
+\usepackage{graphicx} % .png, .jpg etc kan embeddes i dokumentet
+\usepackage[a4paper, bmargin=2cm]{geometry}
+\usepackage{float} %Placer floats præcist med specifier'en "H"
+\usepackage{caption} %kontroller "caption" bedre
+\usepackage{subcaption} %lav captions i subfloats
+\usepackage{paralist} %gør lister mere fleksible
+\usepackage{wasysym} %lav smileys
+
+\usepackage{endnotes} %lav slutnoter
+\renewcommand{\notesname}{Noter} %omdøb overskriften for slutnote-afsnittet
+
+\usepackage{multirow} %slå flere rækker i en tabel sammen til én
+\usepackage{collect} %Indhent tekst til senere brug
+\usepackage{placeins} %hold floats indenfor barrierer
+\usepackage{import} %erstatter \include{} og \input{} af subfolders
+\setcounter{secnumdepth}{4} %nummerer helt ned til subsubsection
+\setcounter{tocdepth}{4} %indholdsfortegnelse helt ned til subsubsection
+
+\newcommand{\bs}{\textbackslash} % skriv "\" uden at få skrivekrampe
+
+%\author{Klaus Wogelius}
+\title{Letter of application for the\\ position as Telecom Field Engineer}
+\begin{document}
+\maketitle
+\subsection*{Dear Mrs. Selsøe}
+I am writing to you to express my interest in the Telecom Field Engineer position currently available at Blue Town.
+\par
+I believe that I am fit for this position due to many years of experience in planning, installing, commissioning and handover of Telecom equipment from the Installation Department to the Maintenance Department of Tele Greenland.
+\par
+In your job description most items stood out to me as very alike the daily tasks of my current job as Project Engineer. Tasks like:
+\begin{compactitem}
+\item technical deployment and supervision of suppliers (civil works on-site),
+\item commissioning of deployed installations,
+\item supplier follow up and management,
+\item quality assurance of the technical installations,
+\item antenna adjustment, and
+\item involvement in completing documentation, developing test, commissioning documentation and ensuring the necessary documentation in order to carry out the installation, are familiar to me.
+\end{compactitem}
+\par
+I also comply to your requirement for:
+\begin{compactitem}
+\item relevant technical educational background. 
+\item minimum 3 years experience with similar tasks - preferably from a Telecom company installing for example 3G or 4G network\footnote{As mostly involved in backbone and access radio - and IP Core network I am yet to have installed any 3G or 4G network.}.
+\item leadership experience and experience from working with different cultures.
+\end{compactitem}
+\par
+I am experienced, dedicated and self-driven - believing to have the overview and flair for technique and mechanical design. I am used to travelling activity as part of my job.
+\par
+After you have reviewed my application and resume I believe that you will see that I possess a skill set which matches your requirements almost perfectly. If you have any further questions or require additional documentation, please feel free to contact me.\\[.2cm]
+Thank you for your time and consideration.\\[.2cm]
+Respectfully
+\\[.2cm]
+Klaus Wogelius\\
+\textit{E-mail:} kw@tele.gl\\
+\textit{Cell phone:} +299 54 27 85\\
+
+
+\printbibliography[title=Referencer]
+\end{document}
